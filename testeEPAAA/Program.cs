@@ -13,8 +13,8 @@ namespace testeEPAAA
         {
            bool variavel = true;
 
-            while (variavel == true) 
-            {
+            while (variavel == true)
+             {
                 Console.WriteLine("Digite um numero:");
                     
                 int num1_int = int.Parse(Console.ReadLine());
@@ -28,11 +28,12 @@ namespace testeEPAAA
                 Console.WriteLine("A soma dos dois números é:" + soma);
 
                 Console.WriteLine("Deseja continuar? (S/N):  ");
-                string resp = Console.ReadLine();
+                string resp = Console.ReadLine().ToLower();
 
-                if (resp == "n" || resp == "N")
+                if (resp == "n")
                 {
                     variavel = false;
+                    
                 }
             }
         }
